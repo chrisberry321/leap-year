@@ -31,7 +31,7 @@ $(document).ready(function() {
 
     $(".year").text(year);
 
-		if (year === NaN || year < 0 ) {
+		if (isNaN(year) || year < 0 ) {
 			alert("OMG INVALID INPUT");
 			$(".not").text("not");
 		}
